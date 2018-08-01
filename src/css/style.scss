@@ -17,6 +17,7 @@
         margin-right:rem(8px);
         img{
             display: block;
+            height: rem(23px);
         }
     }
     label{
@@ -56,6 +57,51 @@
         width: 100%;
         img{
             width: 100%;
+        }
+    }
+}
+.list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:rem(10px);
+    li{
+        width: 20%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        margin-bottom:rem(10px);
+        img{
+            height: rem(45px);
+        }
+        span{
+            margin-top: rem(5px);
+            font-size: rem(12px);
+            color: rgb(102, 102, 102);
+        }
+    }
+}
+.title{
+    width: 100%;
+    height: rem(60px);
+    display: flex;
+    align-items: center;
+    padding: 0 rem(10px);
+    img{
+        height: rem(40px);
+    }
+    .text{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: rem(10px) rem(8px);
+        .news{
+            em{
+                border: 1px solid #FF4E22;
+                color:#FF4E22;
+            }
         }
     }
 }
