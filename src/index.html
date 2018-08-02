@@ -77,20 +77,137 @@
             </ul>
             <div class="title">
                 <img src="./img/new.jpg" alt="">
-                <div class="text">
-                    <div class="news">
-                        <em>瘦身</em>
-                        <span>需要多久？能成功减掉10公斤纯脂肪</span>
-                    </div>
-                    <div class="news">
-                        <em>瘦身</em>
-                        <span>需要多久？能成功减掉10公斤纯脂肪</span>
+                <div class="textwrap swiper-container">
+                    <div class="textbox swiper-wrapper">
+                        <div class="text swiper-slide">
+                            <div class="news">
+                                <em>瘦身</em>
+                                <span>需要多久？能成功减掉10公斤纯脂肪</span>
+                            </div>
+                            <div class="news">
+                                <em>瘦身</em>
+                                <span>需要多久？能成功减掉10公斤纯脂肪</span>
+                            </div>
+                        </div>
+                        <div class="text swiper-slide">
+                            <div class="news">
+                                <em>啦啦</em>
+                                <span>需要多久？能成功减掉10公斤纯脂肪</span>
+                            </div>
+                            <div class="news">
+                                <em>啦啦</em>
+                                <span>需要多久？能成功减掉10公斤纯脂肪</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="imgtext">
+                <ul>
+                    <li>
+                        <div class="libox">
+                            <dl>
+                                <dd>
+                                    <h3>淘抢购</h3>
+                                </dd>
+                                <dt>
+                                    <img src="./img/pic1.jpg" alt="">
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="libox">
+                            <dl>
+                                <dt>
+                                    <img src="./img/pic2.jpg" alt="">
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="libox">
+                            <dl>
+                                <dd>
+                                    <h3>有好货</h3>
+                                    <span>高颜值美物</span>
+                                </dd>
+                                <dt>
+                                    <img src="./img/pic3.jpg" alt="">
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="libox">
+                            <dl>
+                                <dt>
+                                    <img src="./img/pic4.jpg" alt="">
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="libox">
+                            <dl>
+                                <dd>
+                                    <h3>淘抢购</h3>
+                                </dd>
+                                <dt>
+                                    <img src="./img/pic1.jpg" alt="">
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="libox">
+                            <dl>
+                                <dt>
+                                    <img src="./img/pic2.jpg" alt="">
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="libox">
+                            <dl>
+                                <dd>
+                                    <h3>有好货</h3>
+                                    <span>高颜值美物</span>
+                                </dd>
+                                <dt>
+                                    <img src="./img/pic3.jpg" alt="">
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="libox">
+                            <dl>
+                                <dt>
+                                    <img src="./img/pic4.jpg" alt="">
+                                </dt>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </main>
         <footer class="footer">
-
+            <ul class="btmlist">
+                <li>
+                    <i class="icon iconfont icon-shouye"></i>
+                    <span>首页</span>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-daishouhuo-01"></i>
+                    <span>物流</span>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-gouwuche"></i>
+                    <span>购物车</span>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-icongerenzhongxin-01"></i>
+                    <span>我的淘宝</span>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-share"></i>
+                    <span>更多</span>
+                </li>
+            </ul>
         </footer>
     </div>
     <script>
@@ -102,6 +219,11 @@
                 delay: 2000,
                 disableOnInteraction: false
             },
+            loop: true
+        })
+        new Swiper('.textwrap', {
+            direction:"vertical",
+            autoplay:true,
             loop: true
         })
     </script>

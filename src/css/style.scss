@@ -90,17 +90,69 @@
     img{
         height: rem(40px);
     }
-    .text{
+    .textwrap{
         flex: 1;
         height: 100%;
+        .textbox{
+            width: 100%;
+            height: 100%;
+            .text{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: rem(10px) rem(8px);
+                .news{
+                    em{
+                        border: 1px solid #FF4E22;
+                        color:#FF4E22;
+                    }
+                }
+            }
+        }
+    }
+}
+.imgtext{
+    width: 100%;
+    ul{
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: rem(10px) rem(8px);
-        .news{
-            em{
-                border: 1px solid #FF4E22;
-                color:#FF4E22;
+        flex-wrap: wrap;
+        li{
+            padding-top:rem(10px);
+            width: 50%;
+            display: flex;
+            border-bottom:1px solid rgb(165, 165, 165);
+            &:nth-child(3){
+                border-bottom:0;
+            }
+            &:last-child{
+                border-bottom:0;
+            }
+            .libox{
+                display: flex;
+                width: 50%;
+                justify-content: center;
+                dl{
+                    display: flex;
+                    flex-direction: column;
+                    dt{
+                        img{
+                            display: block;
+                        }
+                    }
+                    dd{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        h3{
+                            font-weight: bold;
+                            font-size: rem(14px);
+                        }
+                    }
+                }
             }
         }
     }
@@ -108,4 +160,25 @@
 .footer{
     width: 100%;
     height: rem(42px);
+    border-top: 1px solid #eee;
+    .btmlist{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        li{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: rem(18px);
+            }
+            span{
+                margin-top: rem(-4px);
+                font-size: rem(12px);
+            }
+        } 
+    }
 }
